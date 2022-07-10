@@ -1,24 +1,61 @@
-::-webkit-scrollbar {
-  -webkit-appearance: none;
-  width: 0;
-  height: 0;
-}
-
 :root {
-  --color-orange: #FF9900;
-  --color-black: #333;
+  --color-header-bg: #000;
+  --color-text: #333;
+  --color-pagination-bg-black: #666;
+  --color-caption: #999;
+  --color-accordion-pagination-usage: #D1A9F0;
+  --color-link-hover-bg-black: #C283F3;
+  --color-link-btn-active: #7943A4;
+  --color-whatsapp: #30BF39;
+  --color-telegram: #26A5E4;
+  --color-validate-error: #D11616;
+  --color-accordion-line: #cacaca;
+  --color-pagination-bg-white: #ececec;
   --color-white: #fff;
-  --color-gray: #CACACA;
+
 }
 
 @font-face {
-  font-family: 'Montserrat';
+  font-family: 'OpenSans';
   src:
-  local('Montserrat Regular'),
-  local('MontserratRegular'),
-  url('../fonts/Montserrat-Regular.woff2') format('woff2'),
-  url('../fonts/Montserrat-Regular.woff') format('woff');
+  local('OpenSansRegular'),
+  local('OpenSans Regular'),
+  url('../fonts/OpenSans-Regular.woff2') format('woff2'),
+  url('../fonts/OpenSans-Regular.woff') format('woff');
   font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src:
+  local('OpenSansSemiBold'),
+  local('OpenSans SemiBold'),
+  url('../fonts/OpenSans-SemiBold.woff2') format('woff2'),
+  url('../fonts/OpenSans-SemiBold.woff') format('woff');
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src:
+  local('OpenSansBold'),
+  local('OpenSans Bold'),
+  url('../fonts/OpenSans-Bold.woff2') format('woff2'),
+  url('../fonts/OpenSans-Bold.woff') format('woff');
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src:
+  local('OpenSansItalic'),
+  local('OpenSans Italic'),
+  url('../fonts/OpenSans-Italic.woff2') format('woff2'),
+  url('../fonts/OpenSans-Italic.woff') format('woff');
+  font-style: italic;
   font-weight: 400;
 }
 
@@ -33,11 +70,11 @@ html {
 }
 
 body {
-  min-width: 320px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'OpenSans', sans-serif;
   font-size: 16px;
   font-weight: 400;
-  color: var(--color-black);
+  font-style: normal;
+  color: var(--color-text);
   background-color: #FFF;
 }
 
