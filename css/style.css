@@ -13,6 +13,7 @@
   --color-accordion-line: #cacaca;
   --color-pagination-bg-white: #ececec;
   --color-white: #fff;
+  --bg-artist: url('../img/realism_tintoretto.jpg');
 
 }
 
@@ -248,10 +249,19 @@ body {
 
 .dropdown__content {
   position: absolute;
-  top: 45px;
+  top: -100px;
   left: 0;
+  display: none;
   padding: 40px;
   background-color: rgba(0, 0, 0, .5);
+  opacity: 0;
+  transition: all .3s ease-in;
+}
+
+.dropdown__content--active {
+  display: block;
+  top: 45px;
+  opacity: 1;
 }
 
 .dropdown__content-item {
@@ -259,18 +269,7 @@ body {
   min-width: 220px;
 }
 
-.realism-1 {
-  background-image: url('../img/realism_tintoretto.jpg');
-}
-.realism-2 {
-  background-image: url('../img/realism_fridrix.jpg');
-}
-.realism-3 {
-  background-image: url('../img/realism_leonardo.jpg');
-}
-.realism-4 {
-  background-image: url('../img/realism_verrokko.jpg');
-}
+/* .realism-1 {
 
 .impressionism-1 {
   background-image: url('../img/impressionism_mone.jpg');
@@ -334,7 +333,7 @@ body {
 
 .futurism-4 {
   background-image: url('../img/futurism_balla.jpg');
-}
+} */
 
 .dropdown__content-item:not(:last-child) {
   margin-bottom: 20px;
