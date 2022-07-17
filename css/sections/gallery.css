@@ -1,0 +1,7 @@
+/* gallery */
+/* позиционирование */
+/* стилистика */
+.gallery__container {
+  min-height: 595px;
+  background: url('../../img/gallery-bg.jpg');
+}

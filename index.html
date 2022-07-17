@@ -4,8 +4,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css//plugins/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/sections/header.css">
+  <link rel="stylesheet" href="css/sections/banner.css">
+  <link rel="stylesheet" href="css/sections/about-us.css">
+  <link rel="stylesheet" href="css/sections/gallery.css">
+  <link rel="stylesheet" href="css/sections/catalog.css">
   <title>Blanchard - предметы искусства.</title>
 </head>
 <body class="body">
@@ -51,7 +57,7 @@
           </div>
         </div>
         <div class="navbar__right row">
-          <ul class="nav list-reset row">
+          <nav class="nav list-reset row">
             <li class="nav__list-item">
               <a class="nav__item-a" href="#">О нас</a>
             </li>
@@ -70,7 +76,7 @@
             <li class="nav__list-item">
               <a class="nav__item-a" href="#">Контакты</a>
             </li>
-          </ul>
+          </nav>
           <div class="user-account">
             <button class="user-account__enter-btn">Войти</button>
           </div>
@@ -84,89 +90,89 @@
       <div class="container banner__container">
         <div class="dropbar row">
           <div class="dropbar__left">
-            <ul class="dropdown list-reset row">
-              <li class="dropdown__list-item">
-                <a class="dropdown__list-a" href="#">Реализм</a>
-                <ul class="dropdown__content list-reset">
-                  <li class="dropdown__content-item realism-1">
-                    <a class="dropdown__content-a" href="#">Тинторетто</a>
+            <ul class="list-direction list-reset row">
+              <li class="list-direction__item">
+                <a class="list-direction__item-a" href="#">Реализм</a>
+                <ul class="dropdown list-reset">
+                  <li class="dropdown__item">
+                    <a class="dropdown__item-a" href="#">Тинторетто</a>
                   </li>
-                  <li class="dropdown__content-item realism-2">
-                    <a class="dropdown__content-a" href="#">Фридрих</a>
+                  <li class="dropdown__item">
+                    <a class="dropdown__item-a" href="#">Фридрих</a>
                   </li>
-                  <li class="dropdown__content-item realism-3">
-                    <a class="dropdown__content-a" href="#">Леонардо</a>
+                  <li class="dropdown__item">
+                    <a class="dropdown__item-a" href="#">Леонардо</a>
                   </li>
-                  <li class="dropdown__content-item realism-4">
-                    <a class="dropdown__content-a" href="#">Верроккьо</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="dropdown__list-item">
-                <a class="dropdown__list-a" href="#">Импрессионизм</a>
-                <ul class="dropdown__content list-reset">
-                  <li class="dropdown__content-item">
-                    <a class="dropdown__content-a" href="#">Моне</a>
-                  </li>
-                  <li class="dropdown__content-item">
-                    <a class="dropdown__content-a" href="#">Сислей</a>
-                  </li>
-                  <li class="dropdown__content-item">
-                    <a class="dropdown__content-a" href="#">Мане</a>
-                  </li>
-                  <li class="dropdown__content-item">
-                    <a class="dropdown__content-a" href="#">Ренуар</a>
+                  <li class="dropdown__item">
+                    <a class="dropdown__item-a" href="#">Верроккьо</a>
                   </li>
                 </ul>
               </li>
-              <li class="dropdown__list-item">
-                <a class="dropdown__list-a" href="#">Постимпрессионизм</a>
-                <ul class="dropdown__content list-reset">
-                  <li class="dropdown__content-item">
-                    <a class="dropdown__content-a" href="#">Ван Гог</a>
+              <li class="list-direction__item">
+                <a class="list-direction__item-a" href="#">Импрессионизм</a>
+                <ul class="dropdown list-reset">
+                  <li class="dropdown__item">
+                    <a class="dropdown__item-a" href="#">Моне</a>
                   </li>
-                  <li class="dropdown__content-item">
-                    <a class="dropdown__content-a" href="#">Сезанн</a>
+                  <li class="dropdown__item">
+                    <a class="dropdown__item-a" href="#">Сислей</a>
                   </li>
-                  <li class="dropdown__content-item">
-                    <a class="dropdown__content-a" href="#">Гоген</a>
+                  <li class="dropdown__item">
+                    <a class="dropdown__item-a" href="#">Мане</a>
                   </li>
-                  <li class="dropdown__content-item">
-                    <a class="dropdown__content-a" href="#">Сёра</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="dropdown__list-item">
-                <a class="dropdown__list-a" href="#">Авангард</a>
-                <ul class="dropdown__content list-reset">
-                  <li class="dropdown__content-item">
-                    <a class="dropdown__content-a" href="#">Кандинский</a>
-                  </li>
-                  <li class="dropdown__content-item">
-                    <a class="dropdown__content-a" href="#">Маринетти</a>
-                  </li>
-                  <li class="dropdown__content-item">
-                    <a class="dropdown__content-a" href="#">Малевич</a>
-                  </li>
-                  <li class="dropdown__content-item">
-                    <a class="dropdown__content-a" href="#">Пикассо</a>
+                  <li class="dropdown__item">
+                    <a class="dropdown__item-a" href="#">Ренуар</a>
                   </li>
                 </ul>
               </li>
-              <li class="dropdown__list-item">
-                <a class="dropdown__list-a" href="#">Футуризм</a>
-                <ul class="dropdown__content list-reset">
-                  <li class="dropdown__content-item">
-                    <a class="dropdown__content-a" href="#">Карра</a>
+              <li class="list-direction__item">
+                <a class="list-direction__item-a" href="#">Постимпрессионизм</a>
+                <ul class="dropdown list-reset">
+                  <li class="dropdown__item">
+                    <a class="dropdown__item-a" href="#">Ван Гог</a>
                   </li>
-                  <li class="dropdown__content-item">
-                    <a class="dropdown__content-a" href="#">Прателла</a>
+                  <li class="dropdown__item">
+                    <a class="dropdown__item-a" href="#">Сезанн</a>
                   </li>
-                  <li class="dropdown__content-item">
-                    <a class="dropdown__content-a" href="#">Северини</a>
+                  <li class="dropdown__item">
+                    <a class="dropdown__item-a" href="#">Гоген</a>
                   </li>
-                  <li class="dropdown__content-item">
-                    <a class="dropdown__content-a" href="#">Балла</a>
+                  <li class="dropdown__item">
+                    <a class="dropdown__item-a" href="#">Сёра</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="list-direction__item">
+                <a class="list-direction__item-a" href="#">Авангард</a>
+                <ul class="dropdown list-reset">
+                  <li class="dropdown__item">
+                    <a class="dropdown__item-a" href="#">Кандинский</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a class="dropdown__item-a" href="#">Маринетти</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a class="dropdown__item-a" href="#">Малевич</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a class="dropdown__item-a" href="#">Пикассо</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="list-direction__item">
+                <a class="list-direction__item-a" href="#">Футуризм</a>
+                <ul class="dropdown list-reset">
+                  <li class="dropdown__item">
+                    <a class="dropdown__item-a" href="#">Карра</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a class="dropdown__item-a" href="#">Прателла</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a class="dropdown__item-a" href="#">Северини</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a class="dropdown__item-a" href="#">Балла</a>
                   </li>
                 </ul>
               </li>
@@ -411,6 +417,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/dropdawn_bg.js"></script>
   <script src="js/script.js"></script>
   </body>
   </html>
