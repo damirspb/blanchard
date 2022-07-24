@@ -5,6 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css//plugins/normalize.css">
+  <link rel="stylesheet" href="/js/node_modules/simplebar/dist/simplebar.min.css">
+  <link rel="stylesheet" href="/js/node_modules/choices.js/public/assets/styles/choices.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/sections/header.css">
@@ -12,6 +14,16 @@
   <link rel="stylesheet" href="css/sections/about-us.css">
   <link rel="stylesheet" href="css/sections/gallery.css">
   <link rel="stylesheet" href="css/sections/catalog.css">
+  <noscript>
+    <style>
+      /**
+      * Reinstate scrolling for non-JS clients
+      */
+      .simplebar-content-wrapper {
+        overflow: auto;
+      }
+    </style>
+  </noscript>
   <title>Blanchard - предметы искусства.</title>
 </head>
 <body class="body">
@@ -21,7 +33,7 @@
         <div class="navbar__left">
           <div class="navbar__logo">
             <a class="navbar__logo-a" href="#">
-              <svg width="173" height="40" viewBox="0 0 173 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg width="173" height="40" viewbox="0 0 173 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M2.78965 32.7802L0.289746 29.1348H2.09561L3.79365 31.7425L5.50518 29.1348H7.29756L4.79092 32.7802L7.42559 36.5873H5.6332L3.79365 33.7977L1.96084 36.5873H0.168457L2.78965 32.7802Z" fill="white"/>
                 <path d="M7.60078 29.1348H9.32578L10.8419 33.3597C11.071 33.9616 11.2237 34.5276 11.3001 35.0577H11.354C11.3944 34.8106 11.4686 34.5119 11.5764 34.1615C11.6842 33.8066 12.2547 32.1311 13.2879 29.1348H14.9994L11.8122 37.5778C11.2327 39.1276 10.2669 39.9025 8.91475 39.9025C8.56436 39.9025 8.22295 39.8644 7.89053 39.788V38.5347C8.12861 38.5886 8.40039 38.6155 8.70586 38.6155C9.46953 38.6155 10.0063 38.173 10.3163 37.2881L10.5926 36.5873L7.60078 29.1348Z" fill="white"/>
                 <path d="M23.2808 39.222H21.8051V36.5873H16.6975V39.222H15.2353V35.3609H15.8417C16.3718 34.6018 16.7918 33.6854 17.1018 32.6117C17.4162 31.5336 17.6026 30.3746 17.661 29.1348H22.1892V35.3609H23.2808V39.222ZM20.6326 35.3609V30.3477H19.0289C18.9436 31.273 18.7639 32.185 18.4898 33.0834C18.2203 33.9818 17.8901 34.741 17.4993 35.3609H20.6326Z" fill="white"/>
@@ -91,9 +103,9 @@
         <div class="dropbar row">
           <div class="dropbar__left">
             <ul class="list-direction list-reset row">
-              <li class="list-direction__item">
-                <a class="list-direction__item-a" href="#">Реализм</a>
-                <ul class="dropdown list-reset">
+              <li class="dropdown">
+                <button class="dropdown__btn" data-path="one" href="#">Реализм</button>
+                <ul class="dropdown__menu list-reset" data-target="one">
                   <li class="dropdown__item">
                     <a class="dropdown__item-a" href="#">Тинторетто</a>
                   </li>
@@ -108,9 +120,9 @@
                   </li>
                 </ul>
               </li>
-              <li class="list-direction__item">
-                <a class="list-direction__item-a" href="#">Импрессионизм</a>
-                <ul class="dropdown list-reset">
+              <li class="dropdown">
+                <button class="dropdown__btn" data-path="two" href="#">Импрессионизм</button>
+                <ul class="dropdown__menu list-reset" data-target="two" >
                   <li class="dropdown__item">
                     <a class="dropdown__item-a" href="#">Моне</a>
                   </li>
@@ -125,9 +137,9 @@
                   </li>
                 </ul>
               </li>
-              <li class="list-direction__item">
-                <a class="list-direction__item-a" href="#">Постимпрессионизм</a>
-                <ul class="dropdown list-reset">
+              <li class="dropdown">
+                <button class="dropdown__btn" data-path="three" href="#">Постимпрессионизм</button>
+                <ul class="dropdown__menu list-reset" data-target="three" >
                   <li class="dropdown__item">
                     <a class="dropdown__item-a" href="#">Ван Гог</a>
                   </li>
@@ -142,9 +154,9 @@
                   </li>
                 </ul>
               </li>
-              <li class="list-direction__item">
-                <a class="list-direction__item-a" href="#">Авангард</a>
-                <ul class="dropdown list-reset">
+              <li class="dropdown">
+                <button class="dropdown__btn" data-path="four" href="#">Авангард</button>
+                <ul class="dropdown__menu list-reset" data-target="four" >
                   <li class="dropdown__item">
                     <a class="dropdown__item-a" href="#">Кандинский</a>
                   </li>
@@ -159,9 +171,9 @@
                   </li>
                 </ul>
               </li>
-              <li class="list-direction__item">
-                <a class="list-direction__item-a" href="#">Футуризм</a>
-                <ul class="dropdown list-reset">
+              <li class="dropdown">
+                <button class="dropdown__btn" data-path="five" href="#">Футуризм</button>
+                <ul class="dropdown__menu list-reset" data-target="five" >
                   <li class="dropdown__item">
                     <a class="dropdown__item-a" href="#">Карра</a>
                   </li>
@@ -179,9 +191,9 @@
             </ul>
           </div>
           <div class="dropbar__right">
-            <div class="search">
+            <div class="search row">
               <button class="search__btn"></button>
-              <input class="search__text" type="text" name="" id="" aria-label="Поиск по сайту">
+              <input class="search__text" type="text" name="" id="" aria-label="Поиск по сайту" placeholder="Поиск по сайту">
             </div>
           </div>
         </div>
@@ -195,42 +207,44 @@
     <section class="about-us">
       <div class="container">
         <div class="about-us__inner">
-          <h2 class="section-title">О нас</h2>
+          <h2 class="section-title about-us__title">О нас</h2>
           <p class="about-us__descr">Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого участника как способного принимать собственные решения касаемо распределения внутренних резервов и ресурсов. Не следует, однако, забывать, что высококачественный прототип будущего проекта влечёт за собой процесс внедрения и модернизации модели развития. Повседневная практика показывает, что высокое качество позиционных исследований создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса распределения внутренних резервов и ресурсов. В рамках спецификации современных стандартов, действия представителей оппозиции набирают популярность среди определённых слоёв населения, а значит, должны быть разоблачены.</p>
         </div>
       </div>
     </section>
     <section class="gallery">
-      <div class="container gallery__container">
+      <div class="container gallery__container row">
         <div class="gallery__left">
-          <h2 class="section-title section-title--white">Галерея</h2>
+          <h2 class="section-title section-title--white gallery__title">Галерея</h2>
           <div class="gallery__filter filter">
-            <p class="filter__title">Фильтр</p>
-            <select name="" id="">
-              <option value="Живопись">Живопись</option>
-              <option value="Рисунок">Рисунок</option>
-              <option value="Скульптура">Скульптура</option>
-            </select>
-            <ul class="gallery__checkbox-list list-reset">
-              <li class="gallery__checkbox-list-item">
-                <label for="check-1" class="gallery__checkbox-label">
-                  <input class="gallery__checkbox-item" type="checkbox" name="" id="check-1">
-                  XX век
-                </label>
-              </li>
-              <li class="gallery__checkbox-list-item">
-                <label for="check-2" class="gallery__checkbox-label">
-                  <input class="gallery__checkbox-item" type="checkbox" name="" id="check-2">
+            <div class="filter__select-inner">
+              <p class="filter__title">Фильтр</p>
+              <select class="filter__select" name="" id="">
+                <option value="Живопись">Живопись</option>
+                <option value="Рисунок">Рисунок</option>
+                <option value="Скульптура">Скульптура</option>
+              </select>
+            </div>
+            <div class="check-box box">
+              <div class="check">
+                <span class="check__span check__span-1" aria-label="XIX век" role="checkbox" aria-checked="false" onclick="changeCheckbox(event)" onkeypress="changeCheckbox(event)" tabindex="0"></span>
+                <label class="check__label check__label-1" onclick="changeCheckbox(event)" onkeypress="changeCheckbox(event)">
                   XIX век
                 </label>
-              </li>
-              <li class="gallery__checkbox-list-item">
-                <label for="check-3" class="gallery__checkbox-label">
-                  <input class="gallery__checkbox-item" type="checkbox" name="" id="check-3">
+              </div>
+              <div class="check">
+                <span class="check__span check__span-2" aria-label="XX век" role="checkbox" aria-checked="false" onclick="changeCheckbox(event)" onkeypress="changeCheckbox(event)" tabindex="0"></span>
+                <label class="check__label check__label-2" onclick="changeCheckbox(event)" onkeypress="changeCheckbox(event)">
+                  XX век
+                </label>
+              </div>
+              <div class="check">
+                <span class="check__span check__span-3" aria-label="Современность" role="checkbox" aria-checked="false" onclick="changeCheckbox(event)" onkeypress="changeCheckbox(event)" tabindex="0"></span>
+                <label class="check__label check__label-3" onclick="changeCheckbox(event)" onkeypress="changeCheckbox(event)">
                   Современность
                 </label>
-              </li>
-            </ul>
+              </div>
+            </div>
           </div>
         </div>
         <div class="gallery__right">
@@ -417,7 +431,12 @@
       </div>
     </div>
   </footer>
-  <script src="js/dropdawn_bg.js"></script>
+  <script src="/js/simplbar.js"></script>
+  <script src="/js/node_modules/simplebar/dist/simplebar.min.js"></script>
+  <script src="/js/node_modules/choices.js/public/assets/scripts/choices.min.js"></script>
+  <script src="/js/checkbox.js"></script>
+  <script src="/js/choices.js"></script>
+  <script src="js/dropdawn.js"></script>
   <script src="js/script.js"></script>
   </body>
   </html>

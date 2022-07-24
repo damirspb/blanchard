@@ -4,3 +4,8 @@
 .about-us__inner {
   padding: 80px 0;
 }
+
+.about-us__title {
+  margin: 0;
+  margin-bottom: 16px;
+}
